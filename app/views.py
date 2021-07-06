@@ -25,6 +25,7 @@ def bingo(request):
     return render(request, 'bingo.html')
 
 def char(request):
+    form = CharacterForm()
     character = Character.objects.create(
         name=request.POST['name'],
         affiliation=request.POST['affiliation'],
