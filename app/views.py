@@ -52,3 +52,32 @@ def char(request):
 #     allCards.append(newCard)  # Add this newly generated card
 
 # print(allCards)
+
+# # Check each column
+# for i in range(gridSize):
+#     for j in range(gridSize):
+#         if someBooleanCard[i][j] == False:
+#             break  # No BINGO - don't need to check remainder of column
+#         elif j == gridSize - 1:
+#             # BINGO FOUND
+
+#             # Check each row
+# for i in range(gridSize):
+#     for j in range(gridSize):
+#         if someBooleanCard[j][i] == False:
+#             break  # No BINGO - don't need to check remainder of row
+#         elif j == gridSize - 1:
+#             # BINGO FOUND
+
+#             # Check the diagonals
+# for i in range(gridSize):
+#     if someBooleanCard[i][i] == False:
+#         break  # No BINGO - don't need to check remainder of row
+#     elif i == gridSize - 1:
+#         # BINGO FOUND
+
+# for i in range(gridSize):
+#     if someBooleanCard[gridSize - i - 1][i] == False:
+#         break  # No BINGO - don't need to check remainder of row
+#     elif i == gridSize - 1:
+#         # BINGO FOUND
